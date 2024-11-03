@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makan Gratis Marugame Udon</title>
+    <style>
+        /* Basic reset and font styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f6f8fa;
+            color: #24292f;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background-color: #ffffff;
+            border: 1px solid #d0d7de;
+            border-radius: 6px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 24px;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #0969da;
+            margin-bottom: 16px;
+        }
+
+        p,
+        li {
+            margin-bottom: 12px;
+            font-size: 16px;
+        }
+
+        .referral {
+            display: flex;
+            align-items: center;
+            background-color: #f6f8fa;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #d0d7de;
+            margin: 12px 0;
+        }
+
+        .referral-code {
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+            margin-right: 12px;
+        }
+
+        .copy-btn {
+            padding: 6px 12px;
+            background-color: #2da44e;
+            color: #ffffff;
+            border: 1px solid transparent;
+            border-radius: 6px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .copy-btn:hover {
+            background-color: #2c974b;
+        }
+
+        .steps {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        .steps li {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .steps li::before {
+            content: "•";
+            color: #0969da;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        .footer {
+            font-size: 14px;
+            color: #57606a;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>SINI KUMPUL 🔥💯<br>MAKAN GRATIS MARUGAME UDON ✨</h1>
+        <ul class="steps">
+            <li>Download aplikasi Marugame Udon</li>
+            <li>Sign in dan gunakan referral code:</li>
+            <span class="referral">
+                <span class="referral-code" id="referralCode">FUFUFLWW</span>
+
+            </span><button class="copy-btn" onclick="copyReferral()">Salin Kode</button>
+
+            <li>Dapetin voc free dessert + 20 poin</li>
+            <li>Kumpulin poinnya, setiap pembelian 11k dapat 1 poin</li>
+            <li>Reward menu gratis mulai dari 20 poin penukaran</li>
+            <li>Set birthday besok atau bulan ini, nanti dapet vc free birthday udon + ocha GRATIS (berlaku 2 minggu)
+            </li>
+            <li>Wajib disertai pembelian 1 item saat klaim voucher</li>
+            <li>Bisa beli gorengan, minuman, atau saos 5k untuk klaim</li>
+            <li>100% GRATIS, buruan! Bisa takeaway atau dine-in tanpa KTP ✨️</li>
+        </ul>
+        <div class="footer">Selamat mencoba dan semoga berhasil!</div>
+    </div>
+
+    <script>
+        function copyReferral() {
+            const referralCode = document.getElementById("referralCode").textContent;
+            navigator.clipboard.writeText(referralCode).then(() => {
+                alert("Kode referral berhasil disalin!");
+            }).catch(err => {
+                console.error("Gagal menyalin teks:", err);
+            });
+        }
+    </script>
+</body>
+
+</html>
